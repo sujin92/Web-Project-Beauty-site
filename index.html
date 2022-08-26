@@ -4,12 +4,380 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beauty</title>
-
+  <title>Benefit Cosmetic</title>
+<!--
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Benefit" />
+  <meta property="og:title" content="Benefit Cosmetic" />
+  <meta property="og:description" content="여러분의 뷰티 루틴에 가장 이상적인 베네피트 아이템을 확인하세요." />
+  <meta property="og:image" content="./img/logo.png" />
+  <meta property="og:url" content="https://www.benefitcosmetics.com/ko-kr/" />
+  -->
+  <link rel="shortcut icon" type="image/png" href="favicon/apple-icon-180x180.png"/>
+  <!-- 초기화 링크 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <script src="./main.js"></script>
+
+  <script src="https://kit.fontawesome.com/cad96521f3.js" crossorigin="anonymous"></script>
+  <script defer src="./js/main.js"></script>
 </head>
 <body>
-    <div>gg</div>
+  <!-- header 시작 -->
+  <header id="header">
+    <div class="inner">
+      <a href="index.html" class="logo">
+        <img src="./img/Benefit_logo-700x245.png" alt="Benefit Cosmetic" height="60px">
+      </a>
+      <div class="sub_menu">
+        <ul class="menu">
+          <li>
+            <a href="/signin">Sign In</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><i class="fa-solid fa-location-dot"></i>한국</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">매장 찾기</a>
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text">
+          <div class="material-symbols-outlined">search</div>
+        </div>
+      </div>
+      <ul class="main_menu">
+        <li class="item">
+          <div class="item__name">BRAND</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>About</h4>
+                  <ul>
+                    <li>브랜드 소개</li>
+                    <li>연혁</li>
+                    <li>CEO 인사말</li>
+                    <li>그룹사</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>뷰티즌</h4>
+                  <ul>
+                    <li>New Launch</li>
+                    <li>제품 스토리</li>
+                    <li>메이크업 룩</li>
+                    <li>핑크멤버쉽</li>
+                    <li>뷰티포인트</li>
+                    <li>ZEPETO</li>
+                    <li>YOUTUBE</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>지구를 위한 활동</h4>
+                  <ul>
+                    <li>LESS PLASTIC</li>
+                    <li>공병수거 캠페인</li>
+                    <li>FSC 인증</li>
+                    <li>포장재</li>
+                    <li>산림 보호</li>
+                    <li>RECYCLE</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>LINE</h4>
+                  <ul>
+                    <li>Yegan</li>
+                    <li>SoonJung</li>
+                    <li>Moistfull</li>
+                    <li>Fixing Tint</li>
+                    <li>contour</li>
+                    <li>FIX!</li>
+                    <li>Power</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">BEST SELLER</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>신제품</h4>
+                  <ul>
+                    <li>딥클렌징</li>
+                    <li>미니브러쉬</li>
+                    <li>파우치</li>
+                    <li>생얼 라이너</li>
+                    <li>틴트바</li>
+                    <li>약산성 버블</li>
+                    <li>수분 베리어 크림</li>
+                    <li>픽싱 틴트</li>
+                    <li>발효 클렌징 티슈</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>라인별</h4>
+                  <ul>
+                    <li>룩앳마이아이즈</li>
+                    <li>플레이컬러아이즈</li>
+                    <li>컬픽스</li>
+                    <li>닥터마스카라</li>
+                    <li>청순거짓</li>
+                    <li>더블래스팅</li>
+                    <li>모디네일</li>
+                    <li>진저슈가</li>
+                    <li>매트포뮬라</li>
+                    <li>리얼아트</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>카테고리</h4>
+                  <ul>
+                    <li>아이</li>
+                    <li>립</li>
+                    <li>페이스</li>
+                    <li>스킨케어</li>
+                    <li>마스크</li>
+                    <li>클렌져</li>
+                    <li>바디</li>
+                    <li>헤어</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">MAKE UP</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>립제품</h4>
+                  <ul>
+                    <li>진저슈가 진정밤</li>
+                    <li>베러립스</li>
+                    <li>젤리듀이 틴트</li>
+                    <li>윈트체크시럽</li>
+                    <li>크레마 벨벳 틴트</li>
+                    <li>앵두알 생기립밤</li>
+                    <li>디어달링</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>네일</h4>
+                  <ul>
+                    <li>리무버 플로럴</li>
+                    <li>모디 퀵드라이</li>
+                    <li>모디 탑코트</li>
+                    <li>모디 스파네일</li>
+                    <li>모디 글램네일</li>
+                    <li>플레이네일</li>
+                    <li>에센스 스파</li>
+                    <li>플레이네일</li>
+                    <li>핑거팩</li>
+                    <li>네일강화제</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>페이스</h4>
+                  <ul>
+                    <li>그림자쉐딩</li>
+                    <li>커버 파운데이션</li>
+                    <li>스윗레이어 블러셔</li>
+                    <li>타이거 에너지</li>
+                    <li>제로피지 드라잉</li>
+                    <li>윈터체크 블러셔</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>LINE</h4>
+                  <ul>
+                    <li>Yegan</li>
+                    <li>SoonJung</li>
+                    <li>Moistfull</li>
+                    <li>Fixing Tint</li>
+                    <li>contour</li>
+                    <li>FIX!</li>
+                    <li>Power</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">COSMETIC</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>수분진정</h4>
+                  <ul>
+                    <li>휩클렌저</li>
+                    <li>베리어크림</li>
+                    <li>릴리프마스크</li>
+                    <li>순정 토너</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>보습</h4>
+                  <ul>
+                    <li>진저슈가 오버나이트</li>
+                    <li>수분가득 콜라겐</li>
+                    <li>시트마스크</li>
+                    <li>콜라겐미스트</li>
+                    <li>인텐스 아이크림</li>
+                    <li>인텐스 세럼</li>
+                    <li>인텐스 미백크림</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>트러블</h4>
+                  <ul>
+                    <li>그린티 코팩</li>
+                    <li>티트리토너</li>
+                    <li>클린업파우더</li>
+                    <li>파우더마스크</li>
+                    <li>플루이드</li>
+                    <li>약산성 클렌징폼</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>모공관리</h4>
+                  <ul>
+                    <li>발효클렌징오일</li>
+                    <li>그린티 코팩</li>
+                    <li>베이킹파우더</li>
+                    <li>모공클렌징폼</li>
+                    <li>피지쏙 블랙패드</li>
+                    <li>프라이머리</li>
+                    <li>피지쏙 파우더</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">SOLUTIONS</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>트러블피부</h4>
+                  <ul>
+                    <li>진저슈가 진정밤</li>
+                    <li>베러립스</li>
+                    <li>젤리듀이 틴트</li>
+                    <li>윈트체크시럽</li>
+                    <li>크레마 벨벳 틴트</li>
+                    <li>앵두알 생기립밤</li>
+                    <li>디어달링</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>네일</h4>
+                  <ul>
+                    <li>리무버 플로럴</li>
+                    <li>모디 퀵드라이</li>
+                    <li>모디 탑코트</li>
+                    <li>모디 스파네일</li>
+                    <li>모디 글램네일</li>
+                    <li>플레이네일</li>
+                    <li>에센스 스파</li>
+                    <li>플레이네일</li>
+                    <li>핑거팩</li>
+                    <li>네일강화제</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>페이스</h4>
+                  <ul>
+                    <li>그림자쉐딩</li>
+                    <li>커버 파운데이션</li>
+                    <li>스윗레이어 블러셔</li>
+                    <li>타이거 에너지</li>
+                    <li>제로피지 드라잉</li>
+                    <li>윈터체크 블러셔</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>LINE</h4>
+                  <ul>
+                    <li>Yegan</li>
+                    <li>SoonJung</li>
+                    <li>Moistfull</li>
+                    <li>Fixing Tint</li>
+                    <li>contour</li>
+                    <li>FIX!</li>
+                    <li>Power</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">STORE</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>물광</h4>
+                  <ul>
+                    <li>딥클렌징</li>
+                    <li>미니브러쉬</li>
+                    <li>파우치</li>
+                    <li>생얼 라이너</li>
+                    <li>틴트바</li>
+                    <li>약산성 버블</li>
+                    <li>수분 베리어 크림</li>
+                    <li>픽싱 틴트</li>
+                    <li>발효 클렌징 티슈</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>라인별</h4>
+                  <ul>
+                    <li>룩앳마이아이즈</li>
+                    <li>플레이컬러아이즈</li>
+                    <li>컬픽스</li>
+                    <li>닥터마스카라</li>
+                    <li>청순거짓</li>
+                    <li>더블래스팅</li>
+                    <li>모디네일</li>
+                    <li>진저슈가</li>
+                    <li>매트포뮬라</li>
+                    <li>리얼아트</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>카테고리</h4>
+                  <ul>
+                    <li>아이</li>
+                    <li>립</li>
+                    <li>페이스</li>
+                    <li>스킨케어</li>
+                    <li>마스크</li>
+                    <li>클렌져</li>
+                    <li>바디</li>
+                    <li>헤어</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
 </body>
 </html>

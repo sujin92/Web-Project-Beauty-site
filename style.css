@@ -1,4 +1,191 @@
-div{
-  color: red;
-  font-size: 100px;
+/* 공통 레이아웃 */
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+img{
+  display: block;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.inner{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* header 시작 */
+header{
+  border-bottom: 1px solid #EAEAEA;
+}
+
+header > .inner{
+  height: 120px;
+}
+
+header .logo{
+  position: absolute;
+  height: 95px;
+  top: 0;
+  bottom: 0;
+  left: 463px;
+  margin: auto;
+}
+
+header .sub_menu{
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+header .sub_menu ul.menu{
+  font-family: 'Noto Sans KR', sans-serif;
+  display: flex;
+}
+
+header .sub_menu ul.menu li{
+  position: relative;
+}
+
+header .sub_menu ul.menu li:nth-of-type(2) i{
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+header .sub_menu ul.menu li::before{
+  content: '';
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+header .sub_menu ul.menu li:first-child::before{
+  display: none;
+}
+
+header .sub_menu ul.menu li a{
+  font-size: 12px;
+  color: #656565;
+  padding: 11px 16px;
+  display: block;
+}
+
+header .sub_menu ul.menu li a:hover{
+  color: #ff7380;
+}
+
+header .sub_menu .search{
+  position: relative;
+  height: 34px;
+}
+
+header .sub_menu .search input{
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+  transition: width 0.4s;
+}
+
+header .sub_menu .search input:focus{
+  width: 190px;
+  border-color: #ff7380;
+}
+
+header .sub_menu .search .material-symbols-outlined{
+  position: absolute;
+  height: 24px;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: all 0.4s;
+  color: #ff7380;
+}
+
+header .sub_menu .search.focused .material-symbols-outlined{
+  opacity: 0;
+}
+
+header .main_menu{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 23.5%;
+  z-index: 1;
+}
+
+header .main_menu .item .item__name{
+  padding: 10px 20px 10px 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+}
+
+header .main_menu .item:hover .item__name{
+  background-color: #F6F6F6;
+  color: #ff7380;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+}
+
+header .main_menu .item .item__contents{
+  display: none;
+  width: 100%;
+  position: fixed;
+  left: 0%;
+}
+
+header .main_menu .item:hover .item__contents{
+  display: block;
+}
+
+header .main_menu .item .item__contents .contents__menu{
+  background-color: #F6F6F6;
+  cursor: pointer;
+}
+
+header .main_menu .item .item__contents .contents__menu > ul{
+  display: flex;
+  padding: 20px 0;
+  left: 14%;
+}
+
+header .main_menu .item .item__contents .contents__menu > ul > li{
+  width: 220px;
+}
+
+header .main_menu .item .item__contents .contents__menu > ul > li h4{
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header .main_menu .item .item__contents .contents__menu > ul > li ul li{
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+header .main_menu .item .item__contents .contents__menu > ul > li ul li:hover{
+  color: #ff7380;
 }
